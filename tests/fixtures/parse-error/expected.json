@@ -1,0 +1,19 @@
+[
+  {
+    "type": "issue",
+    "check_name": "parse-error",
+    "description": "Unexpected token (7:12)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/first.css",
+      "lines": {
+        "begin": 7,
+        "end": 7
+      }
+    },
+    "severity": "blocker",
+    "fingerprint": "df06fa441de86fe3aac0b1c4a5c7b2bc58562f72"
+  }
+]

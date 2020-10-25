@@ -1,0 +1,87 @@
+[
+  {
+    "type": "issue",
+    "check_name": "number-leading-zero",
+    "description": "Unexpected leading zero (number-leading-zero)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/first.css",
+      "lines": {
+        "begin": 3,
+        "end": 3
+      }
+    },
+    "severity": "major",
+    "fingerprint": "5c1356f9fed67eadcc5eb8199a00ce33a3979aec"
+  },
+  {
+    "type": "issue",
+    "check_name": "declaration-block-no-shorthand-property-overrides",
+    "description": "Unexpected shorthand \"padding\" after \"padding-left\" (declaration-block-no-shorthand-property-overrides)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/first.css",
+      "lines": {
+        "begin": 7,
+        "end": 7
+      }
+    },
+    "severity": "major",
+    "fingerprint": "62fb2322adb83520c414516058f3a528bb77d510"
+  },
+  {
+    "type": "issue",
+    "check_name": "number-no-trailing-zeros",
+    "description": "Unexpected trailing zero(s) (number-no-trailing-zeros)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/second.css",
+      "lines": {
+        "begin": 4,
+        "end": 4
+      }
+    },
+    "severity": "minor",
+    "fingerprint": "79bc20c0038f89d43ea5cdea51ed5932b1bf4c7d"
+  },
+  {
+    "type": "issue",
+    "check_name": "property-no-vendor-prefix",
+    "description": "Unexpected vendor-prefix \"-webkit-border-radius\" (property-no-vendor-prefix)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/third.css",
+      "lines": {
+        "begin": 22,
+        "end": 22
+      }
+    },
+    "severity": "major",
+    "fingerprint": "30e52240146d84c0e170fd1a7baa8c52fdf561d0"
+  },
+  {
+    "type": "issue",
+    "check_name": "max-empty-lines",
+    "description": "Expected no more than 1 empty line(s) (max-empty-lines)",
+    "categories": [
+      "Style"
+    ],
+    "location": {
+      "path": "/Users/test/Sites/example.com/css/third.css",
+      "lines": {
+        "begin": 24,
+        "end": 24
+      }
+    },
+    "severity": "minor",
+    "fingerprint": "31dcd043853a9ba2e0d6bb9181bc91ec387388e1"
+  }
+]
