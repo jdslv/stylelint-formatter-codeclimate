@@ -30,6 +30,8 @@ test:node:10:
     .test
 
   variables:
+    COVERALLS_GIT_BRANCH: $CI_COMMIT_BRANCH
+    COVERALLS_SERVICE_NAME: GitLab CI
     NODE_VERSION: 10
 
 
