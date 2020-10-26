@@ -13,7 +13,6 @@ test:
         - '10'
         - '12'
         - '14'
-        - '15'
 
   image: node:${NODE_VERSION}-alpine
 
@@ -31,10 +30,6 @@ test:
       cobertura: coverage/cobertura*.xml
 
   coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
-
-  rules:
-    - if: '$NODE_VERSION == "15"'
-      allow_failure: true
 
 
 eslint:
