@@ -1,0 +1,11 @@
+.nyc_output/
+coverage/
+tests/
+
+.editorconfig
+.eslintrc.js
+.gitlab-ci.yml
+*.log
+ava.config.js
+pnpm-lock.yaml
+yarn.lock
