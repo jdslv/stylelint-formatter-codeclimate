@@ -14,7 +14,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "codecov": "nyc report --reporter=lcovonly && codecov",
     "lint": "eslint index.js tests/*.js",
     "lint:ci": "npm run lint -- --format junit --output-file eslint.junit.xml",
     "test": "nyc --reporter=text --reporter=cobertura ava",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "ava": "^3.13.0",
-    "coveralls": "^3.1.0",
+    "codecov": "^3.8.0",
     "eslint": "^7.12.0",
     "nyc": "^15.1.0"
   }
