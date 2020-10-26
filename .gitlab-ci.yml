@@ -4,15 +4,8 @@ include:
   - template: Security/Secret-Detection.gitlab-ci.yml
 
 
-test:
+.test:
   stage: test
-
-  parallel:
-    matrix:
-      - NODE_VERSION:
-        - '10'
-        - '12'
-        - '14'
 
   image: node:${NODE_VERSION}-alpine
 
@@ -30,6 +23,30 @@ test:
       cobertura: coverage/cobertura*.xml
 
   coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+
+
+test:node:10:
+  extends:
+    .test
+
+  variables:
+    NODE_VERSION: 10
+
+
+test:node:12:
+  extends:
+    .test
+
+  variables:
+    NODE_VERSION: 12
+
+
+test:node:14:
+  extends:
+    .test
+
+  variables:
+    NODE_VERSION: 14
 
 
 eslint:
