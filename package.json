@@ -16,8 +16,12 @@
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint index.js tests/*.js",
-    "test": "nyc ava",
+    "lint:ci": "npm run lint -- --format junit --output-file eslint.junit.xml",
+    "test": "nyc --reporter=text --reporter=cobertura ava",
     "watch:test": "nyc ava --watch"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "dependencies": {
     "sha1": "^1.1.1"
